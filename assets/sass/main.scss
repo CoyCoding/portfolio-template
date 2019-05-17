@@ -3,6 +3,7 @@
 @import "variables";
 @import "hero";
 
+
 body {
   font-family: 'Roboto', sans-serif;
   // background: purple;
@@ -20,28 +21,36 @@ body {
     align-items: center;
     height: 100vh;
     justify-content: center;
-    max-width: 1440px;
-    margin: 0 auto;
+
   }
 
   .blue-square{
     height: 400px;
-    width: 400px;
-    border: 20px solid lightblue;
-    position: absolute;
-    left: -100px;
-    top: 275px;
-
+    width: 100%;
+    border-top: 20px solid blue;
+    border-bottom: 20px solid blue;
+    border-right: 20px solid blue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     }
 
   .info{
     z-index: 2;
-  }
-  .img{
+    height: 100%;
     display: flex;
-justify-content: flex-end;
+    align-items: center;
+
+    h1{
+      font-size: 3rem;
+    }
   }
   .img-wrapper{
+    display: flex;
+justify-content: center;
+  }
+
+  .img{
     background: url('/img/joe.png');
     width: 100%;
     height: 700px;
