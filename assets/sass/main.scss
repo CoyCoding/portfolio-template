@@ -59,6 +59,10 @@ body {
           -webkit-background-clip: text;
           background-clip: text;
           font-weight: 600;
+          transition: font-size .5s ease-in;
+          opacity: 0;
+          animation: fadein-fromleft 1s ease-in-out 0s 1 forwards;
+          position: relative;
           }
         }
       }
@@ -70,6 +74,9 @@ body {
     flex-direction: column;
     margin-top: 80px;
     align-items: flex-end;
+    opacity: 0;
+    animation: fadein-fromleft 1s ease-in-out 0s 1 forwards;
+    position: relative;
     h2{
       font-size: 5rem;
       text-align: right;
@@ -77,6 +84,7 @@ body {
       color: white;
       text-shadow: #bfbfbf 0px 0px 6px;
       font-weight: 200;
+
     }
     a{
       font-size: 1.5rem;
@@ -97,9 +105,11 @@ body {
     grid-row: 1/4;
     height: 100%;
     align-items: flex-end;
+    transition: all .5s ease-in;
   }
 
   .img{
+
     background: url('/img/joe.png');
     width: 100%;
     height: 100%;
@@ -107,12 +117,37 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 485px;
-    max-height: 700px
+    max-height: 700px;
+    opacity: 0;
+    animation: fadein-fromright 1s ease-in-out 0s 1 forwards;
+    position: relative;
   }
 }
 
-
-
+@keyframes fadein-fromright {
+  0%   {
+    opacity: 0;
+    left:200px;
+    top:0px;
+  }
+  100% {
+    opacity: 1;
+    left:0px;
+    top:0px;
+  }
+}
+@keyframes fadein-fromleft {
+  0%   {
+    opacity: 0;
+    left:-200px;
+    top:0px;
+  }
+  100% {
+    opacity: 1;
+    left:0px;
+    top:0px;
+  }
+}
 
 @media only screen and (max-width: 1199px) and (min-width: 992px){
   .hero{
@@ -169,7 +204,6 @@ body {
     }
   }
 }
-
 @media only screen and (max-width: 991px) and (min-width: 768px){
   .hero{
 
@@ -225,7 +259,6 @@ body {
     }
   }
 }
-
 @media only screen and (max-width: 991px) and (min-width: 768px){
   .hero{
 
@@ -281,7 +314,7 @@ body {
     }
   }
 }
- @media only screen and (max-width: 767px) and (min-width: 576px){
+@media only screen and (max-width: 767px) and (min-width: 576px){
    .hero{
 
      .hero-grid{
@@ -337,7 +370,6 @@ body {
    }
 
  }
-
 @media only screen and (max-width: 575px){
   .hero{
 
