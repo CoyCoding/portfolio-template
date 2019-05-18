@@ -2,6 +2,7 @@
 @import "reset";
 @import "variables";
 @import "hero";
+@import "services";
 
 
 body {
@@ -11,71 +12,64 @@ body {
   box-sizing: border-box;
 }
 
+.container{
+  margin: 0px auto;
+  padding: 150px 20px;
+  max-width: 1200px;
+  h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 150px;
+    letter-spacing: .3rem;
+  }
+}
 
 //// TODO: move to _services.scss file;
-#services{
-  .services-container{
-    margin: 0px auto;
-    padding: 150px 0;
-    max-width: 1200px;
-    h2{
-      font-size: 4rem;
-      text-transform: uppercase;
-      text-align: center;
-      margin-bottom: 150px;
-      letter-spacing: .3rem;
-    }
-    .service-grid{
+#portfolio{
+  .container{
+    .portfolio-grid{
+      height: 1000px;
+      width: 1000px;
+      margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-gap: 20px;
-
-      .card{
-        background: white;
-        display: flex;
-        transition: all 1s ease-in-out 0s;
-
-        .icon-wrapper{
-          display: flex;
-          padding: 20px;
-          align-items: center;
-          border-bottom-right-radius: 10px;
-          border-top-right-radius: 10px;
-          transition: background 1s ease-in-out 0s;
-          i{
-            font-size: 2rem;
-            text-align: center;
-          }
-        }
-
-        &.red{
-          .icon-wrapper{
-            background: #c04d64;
-          }
-        }
-
-        &:hover{
-              box-shadow: #0000007d 0px 0px 20px 0px;
-          transform: scale(1.1);
-          .icon-wrapper{
-            background: #c05555;
-          }
-        }
-        .info-wrapper{
-          padding: 40px;
-          h4{
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            margin: 0 0 30px;
-            font-weight: 500;
-          }
-          p{
-            line-height: 1.3rem;
-
-          }
-
-        }
-
+      grid-gap: 10px;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      .pic1 {
+        grid-row: 1/4;
+        grid-column: 1/10;
+        background: red;
+      }
+      .pic2{
+        grid-row: 1/7;
+        grid-column: 10/13;
+        background: red;
+      }
+      .pic3{
+        grid-row: 4/8;
+        grid-column: 1/5;
+        background: red;
+      }
+      .pic4{
+        grid-row: 4/9;
+        grid-column: 5/10;
+        background: red;
+      }
+      .pic5{
+        grid-row: 8/13;
+        grid-column: 1/5;
+        background: red;
+      }
+      .pic6{
+        grid-row: 9/13;
+        grid-column: 5/10;
+        background: red;
+      }
+      .pic7{
+        grid-row: 7/13;
+        grid-column: 10/13;
+        background: red;
       }
     }
   }
