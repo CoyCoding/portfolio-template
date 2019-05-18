@@ -64,6 +64,7 @@
     position: relative;
     h2{
       font-size: 5rem;
+      text-align: center;
       text-align: right;
       font-style: italic;
       color: white;
@@ -238,7 +239,7 @@
         //border-top: 20px solid #014421;
 
         .name-wrapper{
-          margin-right: 20px;
+          margin: 0 20px;
           h1{
             font-size: 5rem;
             }
@@ -250,7 +251,7 @@
     .info{
       margin-top: 80px;
       h2{
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-shadow: #bfbfbf 0px 0px 6px;
       }
       a{
@@ -274,7 +275,7 @@
     }
   }
 }
-@media only screen and (max-width: 991px) and (min-width: 768px){
+@media only screen and (max-width: 991px) and (min-width: 769px){
   #hero{
 
     .hero-grid{
@@ -305,7 +306,7 @@
     .info{
       margin-top: 80px;
       h2{
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-shadow: #bfbfbf 0px 0px 6px;
       }
       a{
@@ -329,7 +330,7 @@
     }
   }
 }
-@media only screen and (max-width: 767px) and (min-width: 576px){
+@media only screen and (max-width: 768px) and (min-width: 576px){
    #hero{
 
      .hero-grid{
@@ -360,7 +361,7 @@
      .info{
        margin-top: 80px;
        h2{
-         font-size: 3.5rem;
+        font-size: 3rem;
          text-shadow: #bfbfbf 0px 0px 6px;
        }
        a{
