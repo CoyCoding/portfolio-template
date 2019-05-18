@@ -29,13 +29,12 @@ body {
 #portfolio{
   .container{
     .portfolio-grid{
-      height: 1000px;
-      width: 1000px;
+      width: 100%;
       margin: 0 auto;
       display: grid;
       grid-gap: 10px;
       grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(12, 1fr);
+      grid-template-rows: repeat(13, 1fr);
       .pic1 {
         grid-row: 1/4;
         grid-column: 1/10;
@@ -70,6 +69,12 @@ body {
         grid-row: 7/13;
         grid-column: 10/13;
         background: red;
+      }
+      &:after{
+          content: "";
+          display: block;
+          padding-bottom: 100%;
+
       }
     }
   }
