@@ -12,4 +12,53 @@ body {
 }
 
 
-//// TODO: move to _hero.scss file;
+//// TODO: move to _services.scss file;
+#services{
+  .services-container{
+    margin: 100px auto;
+    max-width: 1200px;
+    h2{
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+    .service-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      .card{
+        background: white;
+        display: flex;
+        .icon-wrapper{
+          display: flex;
+          padding: 20px;
+          align-items: center;
+          border-right: blue solid;
+          border-bottom-right-radius: 10px;
+          border-top-right-radius: 10px;
+
+          i{
+            font-size: 2rem;
+            text-align: center;
+          }
+        }
+        .info-wrapper{
+          padding: 40px;
+          h4{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            margin: 0 0 30px;
+            font-weight: 500;
+          }
+          p{
+            line-height: 1.3rem;
+
+          }
+
+        }
+
+      }
+    }
+  }
+}
