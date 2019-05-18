@@ -40,35 +40,25 @@ body {
           align-items: center;
           border-bottom-right-radius: 10px;
           border-top-right-radius: 10px;
-          transition: border 1s ease-in-out 0s;
+          transition: background 1s ease-in-out 0s;
           i{
             font-size: 2rem;
             text-align: center;
           }
         }
 
-        &.blue{
-          .icon-wrapper{
-
-            background: lightblue;
-          }
-        }
-
         &.red{
           .icon-wrapper{
+            background: #c04d64;
+          }
+        }
 
-            background: #ff7a7a;
-          }
-        }
-        &.yellow{
-          .icon-wrapper{
-            background: #ffff75;
-          }
-        }
         &:hover{
-          box-shadow: #c3c3c3 0px 0px 20px 8px;
+              box-shadow: #0000007d 0px 0px 20px 0px;
           transform: scale(1.1);
-          &.blue{ .icon-wrapper{}}
+          .icon-wrapper{
+            background: #c05555;
+          }
         }
         .info-wrapper{
           padding: 40px;
