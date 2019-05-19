@@ -22,8 +22,12 @@ body {
     font-size: 4rem;
     text-transform: uppercase;
     text-align: center;
-    margin: 120px 0;
+    margin: 100px 0;
+    /* background: red; */
+    /* padding: 130px; */
     letter-spacing: 0.3rem;
+    padding-top: 100px;
+    text-shadow: #8e8e8e85 0px 0px 4px;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -36,18 +40,27 @@ body {
 //// TODO: add inner shapes to experience;
 
 #blog{
+  background: linear-gradient(#c04d64, #742e3c);
+  color: white;
+  text-shadow: hsl(348, 41%, 61%) 0 0 20px;
   .container{
     h2{
       position: relative;
-      top: -150px;
+      top: -4px;
+      margin-top: -50px;
+      text-shadow: hsl(348, 41%, 61%) 0 0 20px;
+      /* margin-bottom: 0px; */
     }
     .blog-grid-wrapper{
+      padding-bottom: 100px;
       .blog-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-auto-rows: 500px;
         grid-gap: 10px;
         .blog-post{
+          border: black solid 4px;
+          background: black; 
           .post-img{
             height: 200px;
             background-repeat:  no-repeat !important;
@@ -64,10 +77,9 @@ body {
               text-align: center;
             }
             p{
-              padding:20px;
+              padding: 20px;
               line-height: 1.5rem;
-
-              color: grey;
+              font-size: 1.04rem;
             }
           }
         }
