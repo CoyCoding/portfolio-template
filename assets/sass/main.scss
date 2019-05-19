@@ -41,5 +41,21 @@ body {
       position: relative;
       top: -150px;
     }
+    .blog-grid-wrapper{
+      .blog-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 500px;
+        grid-gap: 10px;
+        .blog-post{
+          .post-img{
+            height: 200px;
+            background-repeat:  no-repeat !important;
+            background-size: cover !important;
+            background-position: center !important;
+          }
+        }
+      }
+    }
   }
 }
