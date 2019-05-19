@@ -1,37 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-@import "reset";
-@import "variables";
-@import "hero";
-@import "services";
-@import "portfolio";
-
-body {
-  font-family: 'Roboto', sans-serif;
-  // background: purple;
-  background: white;
-  box-sizing: border-box;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: 1440px;
-
-  h2 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 120px 0;
-    letter-spacing: 0.3rem;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .container {
-    h2 {
-      font-size: 3rem;
-    }
-  }
-}
 //// TODO: move to _services.scss file;
 
 #experience {

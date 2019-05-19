@@ -1,0 +1,32 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  // background: purple;
+  background: white;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1440px;
+
+  h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px 0;
+    /* background: red; */
+    /* padding: 130px; */
+    letter-spacing: 0.3rem;
+    padding-top: 100px;
+    text-shadow: #8e8e8e85 0px 0px 4px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .container {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
