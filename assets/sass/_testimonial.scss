@@ -14,36 +14,38 @@
   }
   .container{
     margin-bottom: 0;
-    max-width: 100%;
+    max-width: 1200px;
     padding: 0;
 
     .testimonial-body{
-      max-width: 1200px;
-      margin: 0 0 20px;
       margin: 0 auto 20px;
-      justify-content: flex-end;
-      display: flex;
       .testimonial-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
-        grid-template-rows: auto;
-        //grid-gap: 100px;
+        display: flex;
+        justify-content: center;
+        }
         .test-img{
           height: 400px;
+          width: 50%;
           background-repeat: no-repeat !important;
           background-size: cover !important;
-          // border-left: solid white 20px !important;
-          // border-right: solid white 20px !important;
+          animation: collapse-img 1.5s ease-in forwards;
         }
         .spacer{
               box-shadow: inset black 20px 0px 0px 5px;
+              width: 70%;
+              animation: collapse-spacer 2s ease-in forwards;
               &.right{
                     box-shadow: inset black -20px 0px 0px 5px;
               }
         }
         .test-info{
           background: white;
-          padding: 20px;
+          padding: 20px 0;
+          //width: 232%;
+          width: 0%;
+          overflow: hidden;
+          max-height: 384px;
+          animation: collapse 2s ease-in forwards;
           .test-from{
             h3{
               font-size: 2rem;
@@ -68,5 +70,32 @@
       }
 
   }
+
+}
+
+@keyframes collapse {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 200%;
+  }
+}
+
+@keyframes collapse-spacer{
+  0%{
+    width: 2%;
+  }
+  100%{
+    width: 20%;
+  }
+}
+
+@keyframes collapse-img{
+  0%{
+    width: 50%;
+  }
+  100%{
+    width: 30%;
   }
 }
