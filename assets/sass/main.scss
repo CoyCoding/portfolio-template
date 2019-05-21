@@ -14,3 +14,40 @@
 
 //// TODO: add inner shapes to experience;
 //// TODO: add <a></A> to the blog photos;
+
+#navbar{
+  background: linear-gradient(45deg, #565c6c, #5a606f);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  nav{
+    display: flex;
+    .logo{
+      padding: 20px;
+      margin-right: auto;
+      text-transform: uppercase;
+      text-align: right;
+      background-color: #5d0000;
+      color: transparent;
+      text-shadow: 1px 1px 0px rgba(235,203,211,0.48);
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-weight: 600;
+      font-size: 3rem;
+    }
+    .menu{
+      display: flex;
+      align-items: center;
+      ul{
+        display: flex;
+        li{
+          padding: 20px;
+          text-transform: capitalize;
+          color: white;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+}
