@@ -1,7 +1,7 @@
 #portfolio{
   background: linear-gradient(#e1dfdf,#eaeaea);
   .port.container{
-    max-width: 1200px;
+    max-width: 1000px;
     .portfolio-grid{
       width: 100%;
       margin: 0 auto;
@@ -16,11 +16,10 @@
       }
       :nth-child(even){
         border: #c04d64 solid 3px;
-        border-radius: 9px;
+
       }
       :nth-child(odd){
         border: #c04d64 solid 3px;
-        border-radius: 9px;
       }
       .pic1 {
         grid-row: 1/4;

@@ -10,7 +10,7 @@
       /* margin-bottom: 0px; */
     }
     .blog-grid-wrapper{
-      padding-bottom: 150px;
+      padding-bottom: 210px;
       .blog-grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -85,6 +85,7 @@
 
       }
       .blog-grid-wrapper{
+        padding-bottom: 50px;
         .blog-grid{
           .blog-post{
 
@@ -121,6 +122,7 @@
       h2{
       }
       .blog-grid-wrapper{
+            padding-bottom: 50px;
         .blog-grid{
           .blog-post{
 
@@ -157,6 +159,7 @@
         padding-top: 50px;
       }
       .blog-grid-wrapper{
+        padding-bottom: 50px;
         .blog-grid{
           grid-template-columns: 1fr;
           .blog-post{
