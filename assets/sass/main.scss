@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 @import "reset";
-@import "variables";
-@import "navbar";
-@import "hero";
-@import "services";
-@import "portfolio";
-@import "experience";
-@import "blog";
+@import "./mainpage/variables";
+@import "./mainpage/navbar";
+@import "./mainpage/hero";
+@import "./mainpage/services";
+@import "./mainpage/portfolio";
+@import "./mainpage/experience";
+@import "./mainpage/blog";
 @import "global";
-@import "testimonial";
-@import "footer";
+@import "./mainpage/testimonial";
+@import "./mainpage/footer";
 
 //// TODO: add inner shapes to experience;
 //// TODO: add <a></A> to the blog photos;

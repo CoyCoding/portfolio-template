@@ -35,8 +35,8 @@ return viewportwidth;
 //init moblie menu
 function initMobileMenu(){
       const mobileMenuBtn = $('.mobile-icon');
-      var navMenu = $('.nav-menu');
-
+      const navMenu = $('.nav-menu');
+      const navLinks = $('.navlink');
 
       //size the menu will always be visable;
       const moblieBreakPoint = 991;
@@ -53,6 +53,11 @@ function initMobileMenu(){
         }
       });
 
+      navLinks.click(function(){
+        if(getWindowWidth() < moblieBreakPoint){
+          navMenu.addClass('hide');
+        }
+      });
       //menu always visable conditional
       window.addEventListener('resize', ()=>{
         if(getWindowWidth() > moblieBreakPoint &&
@@ -65,6 +70,8 @@ function initMobileMenu(){
         }
       });
 }
+
+
 
 function  initReadMoreOrLessBtn(){
   const readMoreBtn = $('.read-more-btn');
