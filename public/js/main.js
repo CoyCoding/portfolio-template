@@ -5,13 +5,13 @@ $(document).ready(function(){
   const readLessBtn = $('.read-less-btn');
 
   readMoreBtn.click(function(){
-    $(this).addClass('.hide');
+    $(this).toggle();
     $(this).siblings('.more').toggle();
   });
 
   readLessBtn.click(function(){
     $(this).parent().toggle();
-    $(this).toggle();
+    $(this).parent().siblings('.read-more-btn').toggle();
   });
 
 });
