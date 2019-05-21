@@ -1,0 +1,56 @@
+#navbar {
+  background: linear-gradient(45deg, #565c6c, #5a606f);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  border-bottom: black solid 2px;
+
+  nav {
+    display: flex;
+
+    .logo {
+      margin-right: auto;
+      cursor: pointer;
+
+      a {
+        padding: 20px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        background-color: #5d0000;
+        color: transparent;
+        text-shadow: 1px 1px 0 rgba(235,203,211,0.48);
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-weight: 600;
+        font-size: 3rem;
+      }
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+
+        li {
+          padding: 20px;
+          &:hover{
+            a{
+              color: white;
+              text-shadow: white 0 0;
+            }
+          }
+          a{
+            text-transform: capitalize;
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            cursor: hand;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

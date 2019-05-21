@@ -1,5 +1,5 @@
 #hero{
-  padding-top: 88px;
+  padding-top: 58px;
   .hero-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +27,7 @@
       justify-content: flex-end;
       align-items: center;
       background: whitesmoke;
-
+      box-shadow: black 0 0 20px 0px;
       .name-wrapper{
         margin-right: 20px;
         h1{
