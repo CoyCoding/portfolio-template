@@ -24,14 +24,19 @@ body {
     padding-top: 100px;
     text-shadow: #8e8e8e85 0px 0px 4px;
     &.short{
-      margin: 0;
+      margin: 0 0 50px;
     }
   }
 }
 @media only screen and (max-width: 575px) {
   .container {
     h2 {
-      font-size: 3rem;
+      margin: 50px 0 !important;
+      font-size: 2.5rem;
+      padding-top: 50px;
+      &.short{
+        padding: 0;
+      }
     }
   }
 }

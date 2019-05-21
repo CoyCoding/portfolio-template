@@ -5,8 +5,6 @@
   text-shadow: hsl(348, 41%, 61%) 0 0 20px;
   .container{
     h2{
-      position: relative;
-      top: -4px;
       margin-top: -50px;
       text-shadow: hsl(348, 41%, 61%) 0 0 20px;
       /* margin-bottom: 0px; */
@@ -156,6 +154,7 @@
     margin: 150px 0 0;
     .container{
       h2{
+        padding-top: 50px;
       }
       .blog-grid-wrapper{
         .blog-grid{
@@ -187,39 +186,39 @@
     }
   }
  }
-// @media only screen and (max-width: 575px){
-//   #blog{
-//     margin: 150px 0 0;
-//     .container{
-//       h2{
-//       }
-//       .blog-grid-wrapper{
-//         .blog-grid{
-//           .blog-post{
-//
-//             .post-img{
-//
-//             }
-//             .post-body{
-//
-//               &:hover{
-//               }
-//               h3{
-//                     &.long-title{
-//
-//                     }
-//               }
-//               p{
-//
-//               }
-//               a{
-//
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-//
-// }
+@media only screen and (max-width: 575px){
+  #blog{
+    margin: 0px 0 0;
+    .container{
+      h2{
+      }
+      .blog-grid-wrapper{
+        .blog-grid{
+          .blog-post{
+
+            .post-img{
+
+            }
+            .post-body{
+
+              &:hover{
+              }
+              h3{
+                    &.long-title{
+
+                    }
+              }
+              p{
+
+              }
+              a{
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
