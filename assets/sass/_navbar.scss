@@ -11,10 +11,11 @@
     .logo {
       margin-right: auto;
       cursor: pointer;
-
+      display: flex;
+      align-items: center;
       a {
-        padding: 20px;
-        text-decoration: underline;
+        padding-left: 20px;
+        text-decoration: none;
         text-transform: uppercase;
         background-color: #5d0000;
         color: transparent;
