@@ -55,9 +55,11 @@ function initMobileMenu(){
 
       navLinks.click(function(){
         if(getWindowWidth() < moblieBreakPoint){
+          navMenu.removeClass('active');
           navMenu.addClass('hide');
         }
       });
+
       //menu always visable conditional
       window.addEventListener('resize', ()=>{
         if(getWindowWidth() > moblieBreakPoint &&
@@ -70,8 +72,6 @@ function initMobileMenu(){
         }
       });
 }
-
-
 
 function  initReadMoreOrLessBtn(){
   const readMoreBtn = $('.read-more-btn');
