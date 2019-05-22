@@ -2,16 +2,27 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 // const concat = require('gulp-concat')
-// const babel = require('gulp-babel')
+const babel = require('gulp-babel')
 // const watch = require('gulp-watch')
 const browserSync = require('browser-sync')
 const reload = browserSync.reload
 var exec = require('child_process').exec;
 
-gulp.task('default', ['styles',  'browser-sync'], () => {
+gulp.task('default', ['styles', 'scripts', 'browser-sync'], () => {
   gulp.watch('./assets/sass/**/*', ['styles'])
+  gulp.watch('./assets/js/**/*', ['scripts'])
   gulp.watch(['./public/**/*', './public/*', '!public/js/**/.#*js', '!public/css/**/.#*css']).on('change', reload)
 })
+
+gulp.task('scripts', function() {
+  gulp.src('./assets/js/**/*.js')
+      .pipe(
+        babel({
+          presets: ['es2015']
+      }))
+      .pipe(gulp.dest('./public/js'))
+      .pipe(browserSync.stream())
+});
 
 gulp.task('styles', () => {
   gulp.src('assets/sass/**/*.scss')

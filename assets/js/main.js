@@ -1,3 +1,13 @@
-document.getElementsByClassName("read-more-btn")[0].addEventListener("click", function() {
-  alert("Hello World!");
+requirejs.config({
+    //By default load any module IDs from js
+    baseUrl: 'js',
+    paths: {
+    }
+});
+
+$(document).ready(function(){
+  // Start the main app logic.
+  requirejs(['buttons'], function (buttons) {
+    buttons.init();
+  });
 });
