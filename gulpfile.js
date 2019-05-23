@@ -5,7 +5,10 @@ const autoprefixer = require('gulp-autoprefixer')
 const babel = require('gulp-babel')
 // const watch = require('gulp-watch')
 const browserSync = require('browser-sync')
+//var autoprefixer = require('autoprefixer-core');
+//var csso = require("gulp-csso")
 const reload = browserSync.reload
+
 var exec = require('child_process').exec;
 
 gulp.task('default', ['styles', 'scripts', 'browser-sync'], () => {
@@ -25,14 +28,14 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('styles', () => {
-  gulp.src('assets/sass/**/*.scss')
+  gulp.src('./assets/sass/**/*.scss')
     .pipe(
       sass({
         outputStyle: 'compressed'
       })
       .on('error', sass.logError))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions']
+      .pipe(autoprefixer({
+        browsers: ["> 0%"] 
     }))
     .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream())
